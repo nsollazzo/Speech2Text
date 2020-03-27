@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  gcp:
+    build: .
+    environment: 
+      - GOOGLE_APPLICATION_CREDENTIALS=/api_key.json
+    volumes:
+      - ../media:/media
